@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Ibraheem's Interactive Resume</title>
+    <link rel=StyleSheet href="style.css" type="text/css" media=screen />
+    <script src="script.js"></script>
+</head>
+
+<body class="body" onload="welcomeNewJob()">
+
+    <div id="float" class="float invisable">
+        Ibraheem Saoud [1995]
+        <br /> Wanheimer Straße 139 Duisburg (47053)
+        <br /> 01575-5521217
+        <br />
+        <a href="mailto:saoudibraheem@gmail.com">saoudibraheem@gmail.com</a>
+    </div>
+
+
+    <div class="main">
+        <h5>the one and only interactive CV
+            <a href="#fakeDisclamer" onclick="highlight();">*</a>!</h5>
+        <h1>Ibraheem's Interactive Resume</h1>
+        <h2>ready for your inquiries!</h2>
+        <Br />
+        <div class="terminal">
+            <div id="textParent" class="terminal-text typewriter">
+                <p id="text" onclick="clickedOnMe();"></p>
+            </div>
+            <input id="input" />
+            <button onclick="process();">send</button>
+        </div>
+        <div class="buttons">
+            <a href="./marks.pdf"><button id="button1" class="invisable buttons">University</button></a>
+            <a href="./awards.zip"><button id="button2" class="invisable buttons">Awards</button></a>
+            <a href="https://github.com/ibraheemsaoud"><button id="button3" class="invisable buttons">Github</button></a>
+            <a href="https://www.linkedin.com/in/ibraheem-saoud/"><button id="button4" class="invisable buttons">LinkedIn</button></a>
+            <button id="button5" onclick="showInfo();" class="invisable buttons">Info</button>
+        </div>
+        <div class="buttons">
+            <a href="./CV.pdf">
+                <button id="CV" class="invisable buttons">CV</button>
+            </a>
+        </div>
+        <h5 id="fakeDisclamer">
+            *the study has been funded by a private anonymous doner and was preformed on a closed private subreddit,
+            <br /> for the full results call your prefared fake news company.</h5>
+        <h5>
+            By using this website you agree to the terms of use(GDPR approved✔)
+            <br /> the terms are: We are not responisbile for any damages you might cause anyone if you hit them while using this
+            website.
+            <br /> *smaller text*and if you win the lottery in the next 24 hours you are legaly oblidge to send us a thank you
+            note, you are welcome.*/smaller text*
+        </h5>
+    </div>
+
+</body>
+
+</html>
