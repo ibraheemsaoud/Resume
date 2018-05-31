@@ -25,7 +25,7 @@ function welcomeNewJob() {
     if (inUse === 1) return false;
     inUse = 1;
     var p = document.getElementById("text");
-    var text = "Welcome 'insert_title' 'insert_name' to my own interactive resume!\nI'm a fully functional copy of my owner and happy to help you find all the \ninformation you need about me, and hopefully impress you enough to give \nme a chance of an interview!\nNow here are the basics, type which option you want to know first:\n(a) Education.\n(b) Awards.\n(c) Projects.\n(d) Skills and Languages.\n(e) Social and other.\n";
+    var text = "Welcome 'insert_title' 'insert_name' to my own interactive resume!\nI'm a fully functional copy of my owner and happy to help you find all the \ninformation you need about me, and hopefully impress you enough to give \nme a chance of an interview!\nNow here are the basics, type which option you want to know first:\n(0) Full Access.\n(a) Education.\n(b) Awards.\n(c) Projects.\n(d) Skills and Languages.\n(e) Social and other.\n";
     phase = "select";
     CV = "00000";
     typeWriter(p, text, 0, function () {
@@ -93,6 +93,17 @@ function process() {
     switch (phase) {
         case "welcome": break;
         case "select": switch (text[0]) {
+            case "0":
+                document.getElementById("button1").classList.remove("invisable");
+                document.getElementById("button2").classList.remove("invisable");
+                document.getElementById("button3").classList.remove("invisable");
+                document.getElementById("button4").classList.remove("invisable");
+                document.getElementById("button5").classList.remove("invisable");
+                document.getElementById("button1").classList.remove("invisable");
+                document.getElementById("float").classList.remove("invisable");
+                answer = "\nFULL ACCESS\n\nwell now you have full access, enjoy!\n";
+                CV = "11111";
+                break;
             case "a":
             case "A":
                 if (CV[0] == "0") {
